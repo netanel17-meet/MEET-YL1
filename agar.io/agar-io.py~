@@ -1,0 +1,52 @@
+from turtle import *
+import random
+cells=[]
+for x in range(0,99):
+       cell ={"x":random.randint(-50,50), "y":random.randint(-50,50), "dx":0.1, "dy":0.1, "radius":5, "color":random.randint()}
+	cell=create_cell(cell)
+	cells.append(cell)
+
+
+while True:
+	move_cells(cells)
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+mouse= turtle()
+mouse.hideturtle()
+mouse.penup()
+canvas=getcanvas()
+CANVAS_WIDTH=canvas.winfo_width(500)
+CANVAS_HEIGHT=canvas.winfo_height(1000)
+
+
+
+class cell(turtle):
+    def __init__(self ,radius ,x ,y ,dx ,dy, color='black'):
+        turtle.__init__(self)
+        self.penup()
+        self.color("blue", color)
+        self.goto(x,y)
+        self.radius=radius
+        self.dx=dx
+        self.dy=dy
+        self.shape("circle")
+        self.hideturtle()
+    def get_radius(self):
+        return self.radius
+    def get_dx(self):
+        return self.dx
+    def get_dy(self):
+        return self.dy
+'''
+    
